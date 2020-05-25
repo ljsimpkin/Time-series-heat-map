@@ -1,2 +1,2 @@
 # Time-series-heat-map
-A Dynamic way to play with datasets
+A dynamic way to play with datasets
