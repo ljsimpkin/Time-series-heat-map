@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Heatmaps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id = "floating-panel">
+      <button onclick="toggleHeatmap()">Heatmap</button>
+      <button onclick="changeGradient()">gradient</button>
+      <button onclick="changeOpacity()">opacity</button>
+      <span class="slidecontainer"> cumulative
+        <input type="checkbox" id="myCheck" onchange="ft_checkbox()">
+      </span>
+      <select onchange = "datascroll(this.options[this.selectedIndex])" id="select_id">
+        <option value="places_traveled_gps">places_traveled_gps</option> 
+      </select>
+      <span>
+      <span class="slidecontainer"> Radius:
+        <input type="range" min="1" max="100" value="20" class="radiusSlider" id="myRange">
+      </span>
+      <span class="slidecontainer"> Date: 
+      <span id="date">Now</span>
+      <input type="range" min="0" max="45" value="0" class="slider" id="time" step="1">
+      </span>
+      </span>
+    </div>
+
+    <div id = "stats-panel"> 
+      <h3>Stats</h3>
+      <span id="nbGPS">____</span> Countries <br>
+      <span id="nbHives">unknown</span> Hives
+    </div>
+
+    <div id="map"></div>
+    <script type="text/javascript" src="data/places_traveled_gps.json"></script>
+    <script src="scripts.js"> </script>
+    <script async defer type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWawVpOFoKBRUtjQdjPD9YxFcsZlVQ0P8&libraries=visualization&callback=initMap">
+    </script>
+  </body>
+</html>
+

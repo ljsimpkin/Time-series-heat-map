@@ -1,0 +1,103 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, 
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#season {
+  display: inline-block;
+  width: 40px;
+}
+
+#date {
+  display: inline-block;
+  width: 50px;
+}
+
+#stats-panel {
+  position: absolute;
+  width: 10%;
+  bottom: 5px;
+  z-index: 50;
+  background-color: #fff;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  left: 5px;
+
+}
+
+
+#floating-panel {
+  width: 75%;
+  position: absolute;
+  top: 9px;
+  left: 17%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.slidecontainer {
+  font-size: 13px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 17%;
+  height: 7px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.radiusSlider {
+  -webkit-appearance: none;
+  width: 12%;
+  height: 7px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/*.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #857f7f;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #857f7f;
+  cursor: pointer;
+}*/
